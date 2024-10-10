@@ -132,8 +132,12 @@ print(f'There are {neg_count} negative numbers')
 print(f"Zero occurred {zero_count} time(s)")
 # Given the same numbers list, give the sum of all positive numbers, and the sum of all negative numbers
 # This should be done within a single loop
-for num in numbers:
-    pos_sum  += num
-    neg_sum +=  num
+pos_sum = 0
+neg_sum = 0
+for number in numbers:
+    if number >0:
+        pos_sum += number
+    elif number <0:
+        neg_sum += number
 print(f"Sum of positive numbers {pos_sum}")
 print(f"Sum of negative numbers {neg_sum}")
